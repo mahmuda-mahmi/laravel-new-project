@@ -18,7 +18,11 @@
         </div>
     
     @else
-        <p class="mx-auto mt-6 w-full max-w-xl ">No Ideas Yet?! <a href="/ideas/create" class="underline">Create a new one</a></p>
+    <div class="mx-auto mt-6 w-full max-w-xl ">
+        <p class="font-bold text-7xl">No Ideas Yet?!</p>
+        <a href="/ideas/create" class="mt-4 btn btn-soft btn-primary">Create a new one</a>
+    </div>
+        
     @endif
 
 </x-layout>
