@@ -1,26 +1,27 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\Auth\SessionController;
+use App\Http\Controllers\IdeaController;
 use Illuminate\Support\Facades\Route;
 
+// welcome page
 
-Route::get('/', function() {
-    $ideas = session('ideas', []);
-
-    return view('ideas', [
-        'ideas' => $ideas
-    ]);
+Route::get('/', function () {
+    return view('welcome');
 });
+Route::get('/ideas', [IdeaController::class, 'index']);
+Route::get('/ideas/create', [IdeaController::class, 'create']);
+Route::post('/ideas', [IdeaController::class, 'store']);
+Route::get('/ideas/{idea}', [IdeaController::class, 'show']);
+Route::get('/ideas/{idea}/edit', [IdeaController::class, 'edit']);
+Route::patch('/ideas/{idea}', [IdeaController::class, 'update']);
+Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy']);
 
-Route::post('/ideas', function() {
-    $idea = request('idea');
+Route::get('/register', [RegisteredUserController::class, 'create']);
+Route::post('/register', [RegisteredUserController::class, 'store']);
 
-    session()->push('ideas', $idea);
+Route::get('/login', [SessionController::class, 'create']);
+Route::post('/login', [SessionController::class, 'store']);
 
-    return redirect('/');
-});
-
-Route::get('/delete-ideas', function() {
-    session() -> forget('ideas');
-
-    return redirect('/');
-});
+Route::delete('/logout', [SessionController::class, 'destroy']);
