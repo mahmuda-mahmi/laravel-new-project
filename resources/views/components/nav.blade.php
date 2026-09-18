@@ -21,6 +21,7 @@
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a href="/" class="btn btn-ghost">Home</a></li>
                         <li><a href="/ideas" class="btn btn-ghost">Ideas</a></li>
+                        <li><a href="/admin" class="btn btn-ghost">Admin</a></li>
                     </ul>
                 </div>
                 <a href="/" class="flex items-center gap-2 text-base font-bold">
@@ -33,6 +34,7 @@
                 <ul class="menu menu-horizontal px-1">
                 <li><a href="/" class="btn btn-ghost">Home</a></li>
                 <li><a href="/ideas" class="btn btn-ghost">Ideas</a></li>
+                <li><a href="/admin" class="btn btn-ghost">Admin</a></li>
                 </ul>
             </div>
             <div class="navbar-end space-x-2">

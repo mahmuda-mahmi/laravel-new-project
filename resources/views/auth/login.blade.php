@@ -15,5 +15,6 @@
             <button class="btn btn-neutral mt-4">Login</button>
         </fieldset>
     </form>
+    <h5 class="text-center mt-4">New here? <a href="/register" class="link link-primary">Create an account</a></h5>
     
 </x-layout>

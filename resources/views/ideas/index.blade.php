@@ -18,9 +18,9 @@
         </div>
     
     @else
-    <div class="mx-auto mt-6 w-full max-w-xl ">
+    <div class="mx-auto w-full max-w-xl content-center text-center mt-6 px-6">
         <p class="font-bold text-7xl">No Ideas Yet?!</p>
-        <a href="/ideas/create" class="mt-4 btn btn-soft btn-primary">Create a new one</a>
+        <a href="/ideas/create" class="mt-6 btn btn-xl btn-soft btn-primary">Create a new one</a>
     </div>
         
     @endif

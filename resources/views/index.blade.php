@@ -8,7 +8,7 @@
             <div class="w-full max-w-2xl">
 
                 <h1 class="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    Hello, Welcome to IdeaHub
+                    Welcome to IdeaHub
                 </h1>
 
                 <p class="mt-5 max-w-lg text-lg leading-8 text-gray-600 dark:text-gray-400">
@@ -20,7 +20,7 @@
 
                     <a
                         href="ideas"
-                        class="inline-flex items-center gap-3 rounded-lg border px-5 py-3 text-sm font-semibold transition"
+                        class="btn btn-xl btn-soft btn-primary inline-flex items-center gap-3 rounded-lg border px-5 py-3 text-sm font-semibold transition"
                     >
                         View Your Ideas
                         <span class="text-lg">→</span>
@@ -28,7 +28,7 @@
 
                     <a
                         href="ideas/create"
-                        class="inline-flex items-center gap-3 rounded-lg border px-5 py-3 text-sm font-semibold
+                        class="btn btn-xl btn-soft btn-success inline-flex items-center gap-3 rounded-lg border px-5 py-3 text-sm font-semibold
                         transition"
                     >
                         Create New Idea
