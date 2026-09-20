@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\SessionController;
 use App\Http\Controllers\IdeaController;
+// use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 
 // welcome page
@@ -31,7 +32,9 @@ Route::middleware('guest')-> group(function(){
     Route::post('/login', [SessionController::class, 'store']);
 });
 
-Route::get('/admin', function () {
-    return 'admin has this access';
-});
+// Route::get('/admin', function () {
+//     Gate::authorize('view-admin');
+
+//     return 'admin has this access';
+// });
 

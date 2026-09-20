@@ -26,18 +26,3 @@
     @endif
 
 </x-layout>
-
-<!-- <div class="alert">
-        <span>
-            No Ideas Yet?!
-        </span>
-
-        <a href="/ideas/create" class="link">
-            Create a new one
-        </a>
-    </div> -->
-    <!-- <a  class="link link-hover text-base"></a>   -->
-<!-- <div class="card-actions justify-end">
-            <button class="btn btn-primary">Accept</button>
-            <button class="btn btn-ghost">Deny</button>
-        </div> -->
